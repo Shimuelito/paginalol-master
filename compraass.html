@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carro de Compras</title>
+  <!-- Agregar los enlaces a los archivos CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="card card-cart">
+          <div class="card-header">
+            <h4>Carro de Compras</h4>
+          </div>
+          <div class="card-body">
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col">Producto</th>
+                  <th scope="col">Precio</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Total</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>camioneta</td>
+                  <td>$20.00</td>
+                  <td>
+                    <button class="btn btn-sm btn-secondary">-</button>
+                    <span class="mx-2">1</span>
+                    <button class="btn btn-sm btn-secondary">+</button>
+                  </td>
+                  <td>$20.00</td>
+                  <td><button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button></td>
+                </tr>
+                <tr>
+                  <td>auto</td>
+                  <td>$40.00</td>
+                  <td>
+                    <button class="btn btn-sm btn-secondary">-</button>
+                    <span class="mx-2">2</span>
+                    <button class="btn btn-sm btn-secondary">+</button>
+                  </td>
+                  <td>$60.00</td>
+                  <td><button class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-summary">
+          <div class="card-header">
+            <h4>Resumen</h4>
+          </div>
+          <div class="card-body">
+            <table class="table table-borderless">
+              <tbody>
+                <tr>
+                  <td>Subtotal</td>
+                  <td>$80.00</td>
+                </tr>
+                <tr>
+                  <td>Impuestos</td>
+                  <td>$16.00</td>
+                </tr>
+                <tr>
+                  <td>Total</td>
+                  <td>$96.00</td>
+                </tr>
+              </tbody>
+            </table>
+            <button class="btn btn-primary btn-block">Pagar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Agregar los enlaces a los archivos JavaScript de Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn
