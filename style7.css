@@ -1,3 +1,4 @@
+<<<<<<< refs/remotes/origin/Ramita-nueva
 body { 
     text-align: center; 
     background-color: #00ad13; 
@@ -30,3 +31,37 @@ body {
   span:hover { 
     color: #ccc; 
   }
+=======
+body {
+  text-align: center;
+  background-color: #00ad13;
+
+}
+
+.fa-circle-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 8em;
+  margin-top: 15%;
+}
+
+p {
+  color: #fff;
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  color: #fff;
+  cursor: pointer;
+}
+
+span:hover {
+  color: #ccc;
+}
+>>>>>>> ramita nueva con tarjeta
