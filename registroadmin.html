@@ -8,70 +8,55 @@
         <meta name="author" content="" />
         <title>Registro Admin - SB Admin</title>
         <link href="css/stylesCrud.css" rel="stylesheet" />
-        <link href="css/StyleRegistroAdmin.css" rel="stylesheet" />
+        <link href="Style8.css" rel="stylesheet" />
 
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="bg-primary">
-        <div id="layoutAuthentication">
-            <div id="layoutAuthentication_content">
-                <main>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-7">
-                                <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Crear cuenta</h3></div>
-                                    <div class="card-body">
-                                        <form>
-                                            <div class="row mb-3">
-                                                <div class="col-md-6">
-                                                    <div class="form-floating mb-3 mb-md-0">
-                                                        <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" />
-                                                        <label for="inputFirstName">Nombre</label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-floating">
-                                                        <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" />
-                                                        <label for="inputLastName">Apellido</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-floating mb-3">
-                                                <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
-                                                <label for="inputEmail">Correo Electronico</label>
-                                            </div>
-                                            <div class="row mb-3">
-                                                <div class="col-md-6">
-                                                    <div class="form-floating mb-3 mb-md-0">
-                                                        <input class="form-control" id="inputPassword" type="password" placeholder="Create a password" />
-                                                        <label for="inputPassword">Contraseña</label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-floating mb-3 mb-md-0">
-                                                        <input class="form-control" id="inputPasswordConfirm" type="password" placeholder="Confirm password" />
-                                                        <label for="inputPasswordConfirm">Confirma Contraseña</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="mt-4 mb-0">
-                                                <div class="d-grid"><a class="btn btn-primary btn-block" href="loginAdmin.html">Crear Cuenta</a></div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="card-footer text-center py-3">
-                                        <div class="small"><a href="loginAdmin.html">Nesecitas una cuenta? Crear Cuenta</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-            </div>
-            
-        </div>
+        <div class="container">
+            <form action="" class="form" id="form" autocomplete="off">
+              <p class="form-titulo">Regístrate</p>
+              <div class="form-input myname">
+                <input type="text" id="myname">
+                <label for="myname">Nombre</label>
+                <p class="mensajeError"></p>
+              </div>
+              <div class="form-input surname">
+                <input type="text" id="surname">
+                <label for="surname">Apellidos</label>
+                <p class="mensajeError"></p>
+              </div>
+              <div class="form-input email">
+                <input type="email" id="email">
+                <label for="email">Correo electrónico</label>
+                <p class="mensajeError"></p>
+              </div>
+              <div class="form-input password">
+                <input type="password" id="password">
+                <label for="password">Contraseña</label>
+                <p class="mensajeError"></p>
+              </div>
+              <div class="form-input repeatPassword">
+                <input type="password" id="repeatPassword">
+                <label for="repeatPassword">Repetir Contraseña</label>
+                <p class="mensajeError"></p>
+              </div>
+              <div class="form-termsAndConditions termsAndConditions">
+                <input type="checkbox" id="termsAndConditions">
+                <label for="termsAndConditions">He leído y acepto los </label>
+                <a href="#">Términos y Condiciones</a>
+                <p class="mensajeError"></p>
+              </div>
+              <div class="form-boton">
+                <input type="submit" value="Registrar">
+              </div>  
+              <p class="mensajeCorrecto"></p>
+            </form>
+          </div>
+          <a class="btn btn-dark" href="loginAdmin.html">Volver</a>
+
+          <script src="form2.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
+
     </body>
 </html>
